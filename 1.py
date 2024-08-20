@@ -22,11 +22,6 @@ print(f"{BOLD}执行中：1. 安装unzip组件{END}")
 subprocess.run(["apt", "update"])
 subprocess.run(["apt", "install", "wget", "unzip", "-y"])
 
-# 执行操作 2
-print(f"{BOLD}执行中：2. 创建sms文件夹{END}")
-os.makedirs("/sms")
-os.chdir("/sms")
-
 # 执行操作 3
 print(f"{BOLD}执行中：3. 下载SmsForward{END}")
 subprocess.run(["curl", "-LOJ", "-o", "/sms/DbusSmsForward.zip",
