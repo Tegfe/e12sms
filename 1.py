@@ -26,7 +26,6 @@ subprocess.run(["apt", "install", "wget", "unzip", "-y"])
 print(f"{BOLD}执行中：3. 下载SmsForward{END}")
 subprocess.run(["curl", "-LOJ", "-o", "/sms/DbusSmsForward.zip",
                 "https://gitdl.cn/https://raw.githubusercontent.com/lkiuyu/DbusSmsForward/master/%E5%8F%91%E5%B8%83/DbusSmsForward.zip"])
-os.makedirs("/sms/forward")
 subprocess.run(["unzip", "DbusSmsForward.zip", "-d", "/sms/forward"])
 subprocess.run(["chmod", "+x", "/sms/forward/DbusSmsForward"])
 
